@@ -1,0 +1,555 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2 常量 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.3-注释.html" />
+    
+    
+    <link rel="prev" href="2.1-变量和可变性.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Rust实践之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    第1章 Rust工具链安装和介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/1.1-Rust工具链安装原理.html">
+            
+                <a href="../chapter1/1.1-Rust工具链安装原理.html">
+            
+                    
+                    1.1 Rust工具链安装原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/1.2-MSbuildtool的安装.html">
+            
+                <a href="../chapter1/1.2-MSbuildtool的安装.html">
+            
+                    
+                    1.2 MS build tool的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/1.3-Rustup下载及安装.html">
+            
+                <a href="../chapter1/1.3-Rustup下载及安装.html">
+            
+                    
+                    1.3 Rustup下载及安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter1/1.4-Rust安装过程的知识点.html">
+            
+                <a href="../chapter1/1.4-Rust安装过程的知识点.html">
+            
+                    
+                    1.4 Rust安装过程的知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter1/1.5-Rustup管理多工具链的方法.html">
+            
+                <a href="../chapter1/1.5-Rustup管理多工具链的方法.html">
+            
+                    
+                    1.5 Rustup管理多工具链的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter1/1.6-Cargo管理项目的方法.html">
+            
+                <a href="../chapter1/1.6-Cargo管理项目的方法.html">
+            
+                    
+                    1.6 Cargo管理项目的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第2章 Rust基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="2.1-变量和可变性.html">
+            
+                <a href="2.1-变量和可变性.html">
+            
+                    
+                    2.1 变量和可变性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="2.2-常量.html">
+            
+                <a href="2.2-常量.html">
+            
+                    
+                    2.2 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="2.3-注释.html">
+            
+                <a href="2.3-注释.html">
+            
+                    
+                    2.3 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="2.4-基本数据类型.html">
+            
+                <a href="2.4-基本数据类型.html">
+            
+                    
+                    2.4 基本数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="2.5-运算符.html">
+            
+                <a href="2.5-运算符.html">
+            
+                    
+                    2.5 运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="2.6-表达式和语句.html">
+            
+                <a href="2.6-表达式和语句.html">
+            
+                    
+                    2.6 表达式和语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="2.7-函数定义.html">
+            
+                <a href="2.7-函数定义.html">
+            
+                    
+                    2.7 函数定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="2.8-三种控制结构.html">
+            
+                <a href="2.8-三种控制结构.html">
+            
+                    
+                    2.8 三种控制结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.2 常量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="22-&#x5E38;&#x91CF;">2.2 &#x5E38;&#x91CF;</h1>
+<p>&#x4E0A;&#x4E00;&#x8282;&#x8BB2;&#x7684;&#x662F;&#x53D8;&#x91CF;&#x3002;&#x53D8;&#x91CF;&#x7684;&#x7279;&#x70B9;&#x662F;&#x201C;&#x540D;&#x5B57;&#x7ED1;&#x5B9A;&#x5230;&#x4E00;&#x4E2A;&#x503C;&#x201D;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x4E2A;&#x503C;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x53D8;&#x5316;&#x3002;&#x5E38;&#x91CF;&#x5219;&#x66F4;&#x4E25;&#x683C;&#xFF1A;&#x5B83;&#x4ECE;&#x5B9A;&#x4E49;&#x5F00;&#x59CB;&#xFF0C;&#x5C31;&#x4E0D;&#x5E94;&#x8BE5;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x5E38;&#x91CF;&#x5E38;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x90A3;&#x4E9B;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x671F;&#x95F4;&#x59CB;&#x7EC8;&#x56FA;&#x5B9A;&#x7684;&#x91CF;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x7A0B;&#x5E8F;&#x5141;&#x8BB8;&#x7684;&#x6700;&#x5927;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</li>
+<li>&#x4E00;&#x4E9B;&#x56FA;&#x5B9A;&#x7684;&#x6570;&#x5B66;&#x53C2;&#x6570;</li>
+<li>&#x534F;&#x8BAE;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x6216;&#x56FA;&#x5B9A;&#x9650;&#x5236;</li>
+</ul>
+<h2 id="&#x5E38;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;">&#x5E38;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;</h2>
+<p>Rust &#x4F7F;&#x7528; <code>const</code> &#x5B9A;&#x4E49;&#x5E38;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">const</span> MAX_POINTS: <span class="hljs-keyword">u32</span> = <span class="hljs-number">100_000</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;MAX_POINTS = {}&quot;</span>, MAX_POINTS);
+}
+</code></pre>
+<p>&#x4ECE;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5E38;&#x91CF;&#x6709;&#x4E24;&#x4E2A;&#x660E;&#x663E;&#x7279;&#x5F81;&#xFF1A;</p>
+<ul>
+<li>&#x5FC5;&#x987B;&#x4F7F;&#x7528; <code>const</code> &#x5173;&#x952E;&#x5B57;&#x3002;</li>
+<li>&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x6807;&#x6CE8;&#x7C7B;&#x578B;&#x3002;</li>
+</ul>
+<p>&#x4E0E;&#x5F88;&#x591A; <code>let</code> &#x53D8;&#x91CF;&#x4E0D;&#x540C;&#xFF0C;&#x5E38;&#x91CF;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x4F9D;&#x8D56;&#x7F16;&#x8BD1;&#x5668;&#x81EA;&#x52A8;&#x63A8;&#x65AD;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x6837;&#x8BBE;&#x8BA1;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x5E38;&#x91CF;&#x7684;&#x542B;&#x4E49;&#x66F4;&#x660E;&#x786E;&#xFF0C;&#x4E5F;&#x4FBF;&#x4E8E;&#x5B83;&#x5728;&#x66F4;&#x5927;&#x8303;&#x56F4;&#x5185;&#x88AB;&#x4F7F;&#x7528;&#x3002;</p>
+<h2 id="&#x5E38;&#x91CF;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x7684;&#x533A;&#x522B;">&#x5E38;&#x91CF;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x7684;&#x533A;&#x522B;</h2>
+<p>&#x521D;&#x5B66;&#x8005;&#x6700;&#x5BB9;&#x6613;&#x4EA7;&#x751F;&#x7684;&#x8BEF;&#x89E3;&#x662F;&#xFF1A;&#x65E2;&#x7136;&#x53D8;&#x91CF;&#x9ED8;&#x8BA4;&#x4E0D;&#x53EF;&#x53D8;&#xFF0C;&#x90A3;&#x5E38;&#x91CF;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x662F;&#x4E0D;&#x662F;&#x5DEE;&#x4E0D;&#x591A;&#xFF1F;</p>
+<p>&#x8868;&#x9762;&#x4E0A;&#x770B;&#x5F88;&#x50CF;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x7684;&#x5B9A;&#x4F4D;&#x5E76;&#x4E0D;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5148;&#x770B;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, x);
+}
+</code></pre>
+<p>&#x518D;&#x770B;&#x5E38;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">const</span> LIMIT: <span class="hljs-keyword">i32</span> = <span class="hljs-number">10</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, LIMIT);
+}
+</code></pre>
+<p>&#x5B83;&#x4EEC;&#x7684;&#x5DEE;&#x522B;&#x4E3B;&#x8981;&#x4F53;&#x73B0;&#x5728;&#x4E0B;&#x9762;&#x51E0;&#x4E2A;&#x65B9;&#x9762;&#xFF1A;</p>
+<h3 id="1-&#x5B9A;&#x4E49;&#x5173;&#x952E;&#x5B57;&#x4E0D;&#x540C;">1. &#x5B9A;&#x4E49;&#x5173;&#x952E;&#x5B57;&#x4E0D;&#x540C;</h3>
+<ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x4F7F;&#x7528; <code>let</code></li>
+<li>&#x5E38;&#x91CF;&#x4F7F;&#x7528; <code>const</code></li>
+</ul>
+<h3 id="2-&#x7C7B;&#x578B;&#x8981;&#x6C42;&#x4E0D;&#x540C;">2. &#x7C7B;&#x578B;&#x8981;&#x6C42;&#x4E0D;&#x540C;</h3>
+<ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x4F9D;&#x9760;&#x7C7B;&#x578B;&#x63A8;&#x65AD;</li>
+<li>&#x5E38;&#x91CF;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x5199;&#x51FA;&#x7C7B;&#x578B;</li>
+</ul>
+<h3 id="3-&#x9002;&#x7528;&#x573A;&#x666F;&#x4E0D;&#x540C;">3. &#x9002;&#x7528;&#x573A;&#x666F;&#x4E0D;&#x540C;</h3>
+<ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x66F4;&#x9002;&#x5408;&#x67D0;&#x4E2A;&#x5C40;&#x90E8;&#x8303;&#x56F4;&#x5185;&#x201C;&#x6682;&#x65F6;&#x4E0D;&#x53D8;&#x201D;&#x7684;&#x503C;</li>
+<li>&#x5E38;&#x91CF;&#x66F4;&#x9002;&#x5408;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x201C;&#x672C;&#x6765;&#x5C31;&#x5E94;&#x8BE5;&#x56FA;&#x5B9A;&#x201D;&#x7684;&#x503C;</li>
+</ul>
+<h3 id="4-&#x6C42;&#x503C;&#x65F6;&#x673A;&#x4E0D;&#x540C;">4. &#x6C42;&#x503C;&#x65F6;&#x673A;&#x4E0D;&#x540C;</h3>
+<p>&#x5E38;&#x91CF;&#x8981;&#x6C42;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5C31;&#x80FD;&#x591F;&#x786E;&#x5B9A;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<code>const</code> &#x540E;&#x9762;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x7F16;&#x8BD1;&#x5668;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x4F9D;&#x8D56;&#x8FD0;&#x884C;&#x671F;&#x624D;&#x77E5;&#x9053;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x5C31;&#x662F;&#x4E0D;&#x6210;&#x7ACB;&#x7684;&#x601D;&#x8DEF;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-comment">// &#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x793A;&#x610F;&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x5F97;&#x5230;&#x7684;&#x503C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x62FF;&#x6765;&#x5B9A;&#x4E49; const</span>
+<span class="hljs-comment">// const SIZE: usize = get_size();</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A; <code>get_size()</code> &#x5982;&#x679C;&#x4F9D;&#x8D56;&#x8FD0;&#x884C;&#x671F;&#x8BA1;&#x7B97;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x5C31;&#x65E0;&#x6CD5;&#x5F97;&#x5230;&#x5B83;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="&#x5E38;&#x91CF;&#x7684;&#x547D;&#x540D;&#x4E60;&#x60EF;">&#x5E38;&#x91CF;&#x7684;&#x547D;&#x540D;&#x4E60;&#x60EF;</h2>
+<p>Rust &#x793E;&#x533A;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x5168;&#x5927;&#x5199;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x7684;&#x65B9;&#x5F0F;&#x547D;&#x540D;&#x5E38;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">const</span> MAX_RETRY_TIMES: <span class="hljs-keyword">u8</span> = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">const</span> DEFAULT_PORT: u16 = <span class="hljs-number">8080</span>;
+</code></pre>
+<p>&#x8FD9;&#x4E0D;&#x662F;&#x8BED;&#x6CD5;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#xFF0C;&#x4F46;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x975E;&#x5E38;&#x666E;&#x904D;&#x7684;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x773C;&#x5C31;&#x80FD;&#x770B;&#x51FA;&#x67D0;&#x4E2A;&#x540D;&#x5B57;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x5E38;&#x91CF;&#x3002;</p>
+<h2 id="&#x5E38;&#x91CF;&#x9002;&#x5408;&#x653E;&#x5728;&#x54EA;&#x91CC;">&#x5E38;&#x91CF;&#x9002;&#x5408;&#x653E;&#x5728;&#x54EA;&#x91CC;</h2>
+<p>&#x5E38;&#x91CF;&#x5F80;&#x5F80;&#x5B9A;&#x4E49;&#x5728;&#x6BD4;&#x8F83;&#x9760;&#x5916;&#x5C42;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F9B;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x5171;&#x4EAB;&#x4F7F;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">const</span> SECONDS_PER_MINUTE: <span class="hljs-keyword">u32</span> = <span class="hljs-number">60</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">print_seconds</span></span>(minutes: <span class="hljs-keyword">u32</span>) {
+    <span class="hljs-built_in">println!</span>(<span class="hljs-string">&quot;{}&quot;</span>, minutes * SECONDS_PER_MINUTE);
+}
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x505A;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x4E00;&#x65E6;&#x89C4;&#x5219;&#x9700;&#x8981;&#x8C03;&#x6574;&#xFF0C;&#x53EA;&#x6539;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x5373;&#x53EF;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5230;&#x5904;&#x67E5;&#x627E;&#x786C;&#x7F16;&#x7801;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+<h2 id="&#x4E0D;&#x8981;&#x628A;&#x6240;&#x6709;&#x56FA;&#x5B9A;&#x503C;&#x90FD;&#x5199;&#x6210;&#x5E38;&#x91CF;">&#x4E0D;&#x8981;&#x628A;&#x6240;&#x6709;&#x56FA;&#x5B9A;&#x503C;&#x90FD;&#x5199;&#x6210;&#x5E38;&#x91CF;</h2>
+<p>&#x867D;&#x7136;&#x5E38;&#x91CF;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x4F46;&#x4E5F;&#x4E0D;&#x8981;&#x8D70;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6781;&#x7AEF;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x6570;&#x5B57;&#x90FD;&#x503C;&#x5F97;&#x62BD;&#x6210;&#x5E38;&#x91CF;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x672A;&#x5FC5;&#x66F4;&#x6E05;&#x6670;&#xFF1A;</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">const</span> TWO: <span class="hljs-keyword">i32</span> = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">let</span> result = <span class="hljs-number">10</span> / TWO;
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684; <code>2</code> &#x672C;&#x8EAB;&#x5C31;&#x8DB3;&#x591F;&#x76F4;&#x89C2;&#xFF0C;&#x62BD;&#x6210;&#x5E38;&#x91CF;&#x53CD;&#x800C;&#x53EF;&#x80FD;&#x8BA9;&#x4EE3;&#x7801;&#x53D8;&#x5F97;&#x5570;&#x55E6;&#x3002;&#x5E38;&#x91CF;&#x771F;&#x6B63;&#x9002;&#x5408;&#x7684;&#x662F;&#x90A3;&#x4E9B;&#x201C;&#x6709;&#x4E1A;&#x52A1;&#x542B;&#x4E49;&#x201D;&#x6216;&#x8005;&#x201C;&#x5C06;&#x6765;&#x53EF;&#x80FD;&#x7EDF;&#x4E00;&#x8C03;&#x6574;&#x201D;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="&#x672C;&#x8282;&#x5C0F;&#x7ED3;">&#x672C;&#x8282;&#x5C0F;&#x7ED3;</h2>
+<p>&#x5E38;&#x91CF;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x90FD;&#x4F53;&#x73B0;&#x4E86;&#x201C;&#x503C;&#x4E0D;&#x53D8;&#x5316;&#x201D;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x4F46;&#x4E24;&#x8005;&#x4E0D;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#x3002;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x66F4;&#x504F;&#x5411;&#x5C40;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x5E38;&#x91CF;&#x66F4;&#x504F;&#x5411;&#x5168;&#x5C40;&#x89C4;&#x5219;&#x548C;&#x56FA;&#x5B9A;&#x914D;&#x7F6E;&#x3002;&#x7406;&#x89E3;&#x8FD9;&#x5C42;&#x5DEE;&#x522B;&#xFF0C;&#x5199;&#x4EE3;&#x7801;&#x65F6;&#x624D;&#x4E0D;&#x4F1A;&#x4E00;&#x80A1;&#x8111;&#x628A;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x90FD;&#x5199;&#x6210; <code>const</code>&#x3002;</p>
+<h3 id="&#x6D4B;&#x8BD5;&#x9898;">&#x6D4B;&#x8BD5;&#x9898;</h3>
+<ol>
+<li>Rust &#x4E2D;&#x5B9A;&#x4E49;&#x5E38;&#x91CF;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x5173;&#x952E;&#x5B57;&#xFF1F;</li>
+<li>&#x4E3A;&#x4EC0;&#x4E48; <code>const</code> &#x901A;&#x5E38;&#x8981;&#x6C42;&#x663E;&#x5F0F;&#x5199;&#x51FA;&#x7C7B;&#x578B;&#xFF1F;</li>
+<li>&#x5E38;&#x91CF;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x53D8;&#x91CF;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.1-变量和可变性.html" class="navigation navigation-prev " aria-label="Previous page: 2.1 变量和可变性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.3-注释.html" class="navigation navigation-next " aria-label="Next page: 2.3 注释">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2 常量","level":"1.4.2","depth":2,"next":{"title":"2.3 注释","level":"1.4.3","depth":2,"path":"chapter2/2.3-注释.md","ref":"chapter2/2.3-注释.md","articles":[]},"previous":{"title":"2.1 变量和可变性","level":"1.4.1","depth":2,"path":"chapter2/2.1-变量和可变性.md","ref":"chapter2/2.1-变量和可变性.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false,"defaultTheme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"chapter2/2.2-常量.md","mtime":"2026-05-13T11:19:29.494Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-05-13T11:23:06.988Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
